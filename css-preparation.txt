@@ -1,0 +1,67 @@
+CSS PREPARATION - HALLOWEEN POEM WEBPAGE
+
+GOOGLE FONTS
+Fonts: Creepster and Lora
+Weights: 400 and 600 for Lora
+
+HTML LINK TAG (include in the webpage head):
+
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+CSS STYLES:
+
+h1, h2 {
+    font-family: "Creepster", cursive;
+}
+
+body {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    background-color: #17131F;
+    color: #F5EBD7;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.container {
+    background-color: #241D2B;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.poem {
+    line-height: 1.9;
+    white-space: pre-line;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 94%;
+        padding: 14px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+RESPONSIVE BACKGROUND IMAGE
+The background uses background-size: cover to fill the viewport,
+and background-position: center center to keep the image centered.
+
+IMAGE SOURCE
+Background: background.png
+Banner: banner.png
